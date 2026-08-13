@@ -1,80 +1,236 @@
-# Kuntrapaku Mounish Kumar - Developer Portfolio Website
 
-A modern, premium, responsive developer portfolio website built for **Kuntrapaku Mounish Kumar**, Information Science Engineering Student specializing in AI, Generative AI, RAG, Agentic AI, and Full-Stack Web Development.
+A modern and responsive developer portfolio website built for **Mounish Kumar**, an Information Science Engineering student with interests in **AI, Generative AI, RAG, Agentic AI, Backend Development, and Full-Stack Web Development**.
+
+## 🌐 Live Portfolio
+
+**View the deployed portfolio here:**
+
+[Visit My Portfolio](https://portfolio-bice-xi-16.vercel.app/?utm_source=chatgpt.com)
 
 ---
 
 ## 🚀 Key Features & Highlights
 
-- **Flagship Project Deep Dives**: Detailed breakdown cards and modals for **SehatCare** (Offline Gemma LLM Healthcare App) and **MedAI** (RAG Medical Assistant with Next.js, NestJS, FastAPI, and LangChain).
-- **Interactive AI System Architecture**: Step-by-step visual diagram illustrating how AI applications are architected (User Query -> App UI -> Processing -> RAG Retrieval -> LLM -> Response).
-- **Categorized Technology Matrix**: Organized skill categories (Programming Languages, AI & GenAI, Web & Backend, Databases, Tools) without artificial percentage bars.
-- **Resume Download Integration**: Working PDF resume download button pointing to `/assets/resume/Kuntrapaku_Mounish_Kumar_Resume.pdf`.
-- **Responsive & Dark Themed**: Tailored dark theme UI (`#0B0F19`) with glowing cyan/indigo AI accents, glassmorphic cards, and mobile-first responsive menus.
-- **Centralized Data Store**: Single file configuration in `src/data/portfolioData.js` for quick link and text updates.
+* **Flagship Project Deep Dives** — Detailed project showcases for **SehatCare**, an offline AI-powered healthcare application using a Gemma-based model, and **MedAI**, a RAG-powered medical assistant.
+* **Interactive AI Architecture** — A visual representation of how AI applications process user queries through the application, processing layer, RAG retrieval, LLM, and final response.
+* **Categorized Skills Section** — Technologies organized into Programming Languages, AI & Generative AI, Web & Backend Development, Databases, and Tools.
+* **Project Showcase** — Highlights major projects including SehatCare, MedAI, Student Task Management App, and Bus Reservation System.
+* **Resume Download** — Integrated resume download functionality.
+* **Responsive Design** — Optimized for desktop, tablet, and mobile devices.
+* **Dark-Themed UI** — Modern dark interface with AI-inspired accents, glassmorphic cards, hover effects, and smooth interactions.
+* **Centralized Portfolio Data** — Portfolio content is organized for easier future updates, including adding new projects, skills, and links.
 
 ---
 
 ## 🛠️ Technology Stack
 
-- **Frontend Core**: React 19 + Vite
-- **Styling**: Vanilla CSS with custom design tokens, flexbox/grid, and glassmorphism
-- **Iconography**: Lucide React
-- **Deployment Target**: Vercel / Netlify / GitHub Pages (Static zero-backend frontend)
+* **Frontend:** React 19
+* **Build Tool:** Vite
+* **Styling:** Vanilla CSS
+* **Icons:** Lucide React
+* **Version Control:** Git & GitHub
+* **Deployment:** Vercel
 
 ---
 
-## ⚙️ Local Development Instructions
+## 📂 Featured Projects
 
-### 1. Install Dependencies
+### 🏥 SehatCare
+
+An offline AI-powered smart healthcare application designed to provide accessible healthcare assistance.
+
+**Highlights:**
+
+* AI-powered healthcare chatbot
+* Gemma-based healthcare AI model
+* Offline/on-device AI capabilities
+* Symptom analysis
+* Multilingual AI chat and voice assistance
+* Prescription OCR
+* Medicine reminders
+* Health and vital tracking
+* Vaccination management
+* First aid and emergency support
+* Family profiles and wellness check-ins
+
+---
+
+### 🧠 MedAI — AI Medical Assistant
+
+An AI-powered medical assistant that uses **Retrieval-Augmented Generation (RAG)** to provide contextual responses and medical document question answering.
+
+**Technologies include:**
+
+* Next.js
+* NestJS
+* FastAPI
+* PostgreSQL
+* LangChain
+* RAG
+* LLMs
+
+---
+
+### 📋 Student Task Management App
+
+A productivity-focused application for:
+
+* Creating and organizing academic tasks
+* Managing deadlines
+* Automated notifications
+* Task scheduling
+* Progress tracking
+
+---
+
+### 🚌 Bus Reservation System
+
+A database-backed reservation system supporting:
+
+* Bus searching
+* Seat reservation
+* Authentication
+* Seat allocation
+* Fare calculation
+* Booking management
+
+---
+
+## ⚙️ Run Locally
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME.git
+```
+
+### 2. Navigate to the project folder
+
+```bash
+cd YOUR_REPOSITORY_NAME
+```
+
+### 3. Install dependencies
+
 ```bash
 npm install
 ```
 
-### 2. Run Local Development Server
+### 4. Start the development server
+
 ```bash
 npm run dev
 ```
-Open your browser and navigate to `http://localhost:5173`.
 
-### 3. Build for Production
+Open the local URL shown in your terminal, usually:
+
+```text
+http://localhost:5173
+```
+
+---
+
+## 🏗️ Build for Production
+
+Run:
+
 ```bash
 npm run build
 ```
-This command compiles the optimized static assets into the `dist/` directory.
+
+This creates an optimized production build inside the:
+
+```text
+dist/
+```
+
+directory.
+
+You can preview the production build with:
+
+```bash
+npm run preview
+```
 
 ---
 
-## 📝 Customization & Placeholders to Update
+## ✏️ Customization
 
-All portfolio content is centralized in **`src/data/portfolioData.js`**. Update the following placeholders with your real URLs:
+The portfolio is designed so that it can be updated as new projects and skills are added.
 
-| Location in `portfolioData.js` | Placeholder | What to Replace With |
-| :--- | :--- | :--- |
-| `personal.github` | `YOUR_GITHUB_USERNAME` | Your actual GitHub profile URL |
-| `personal.linkedin` | `YOUR_LINKEDIN_USERNAME` | Your actual LinkedIn profile URL |
-| `projects[].links.github` | `YOUR_GITHUB_USERNAME/...` | Your project repository URLs |
-| `projects[].links.demo` | `YOUR_PLAYSTORE_APP_ID` / `YOUR_LIVE_DEMO_URL` | Your Play Store testing or live app link |
-| `certifications[].link` | `YOUR_CERTIFICATE_URL_HERE` | Your NPTEL & Edureka certificate verification links |
+You can update:
 
-### Replacing Resume PDF
-To update your resume PDF:
-Replace the file located at `public/assets/resume/Kuntrapaku_Mounish_Kumar_Resume.pdf` with your latest PDF resume.
+* Personal information
+* Skills
+* Projects
+* Project descriptions
+* GitHub links
+* LinkedIn links
+* Live demo links
+* Certifications
+* Resume
+
+For future projects, add the new project information to the portfolio data structure and the project can be displayed in the Projects section without rebuilding the entire website.
 
 ---
 
-## ☁️ Deployment Guide (Vercel)
+## 📄 Updating the Resume
 
-This project is optimized for 1-click deployment on Vercel:
+To update the resume, replace the existing PDF file in:
 
-1. Push this repository to your **GitHub** account.
-2. Log into [Vercel](https://vercel.com).
-3. Click **"Add New Project"** -> **"Import Git Repository"**.
-4. Select `mounish-portfolio`.
-5. Keep default settings:
-   - **Framework Preset**: Vite
-   - **Build Command**: `npm run build`
-   - **Output Directory**: `dist`
-6. Click **Deploy**.
+```text
+public/assets/resume/
+```
 
-Vercel will build and host your portfolio on a global CDN with free SSL HTTPS.
+Make sure the new file uses the same filename, or update the resume path in the project accordingly.
+
+---
+
+## ☁️ Deployment
+
+This portfolio is successfully deployed using **Vercel**.
+
+### 🌐 Live Website
+
+[https://portfolio-bice-xi-16.vercel.app/](https://portfolio-bice-xi-16.vercel.app/?utm_source=chatgpt.com)
+
+The deployment workflow is:
+
+```text
+Update Portfolio
+       ↓
+Commit Changes
+       ↓
+Push to GitHub
+       ↓
+Vercel Detects Changes
+       ↓
+Automatic Deployment 🚀
+```
+
+To update the deployed portfolio in the future:
+
+```bash
+git add .
+git commit -m "Updated portfolio"
+git push
+```
+
+Vercel will automatically build and deploy the latest version.
+
+---
+
+## 👨‍💻 Author
+
+**Kuntrapaku Mounish Kumar**
+
+Information Science Engineering Student
+Interested in AI, Generative AI, RAG, Agentic AI, Backend Development, and Full-Stack Development.
+
+### 🌐 Portfolio
+
+[portfolio-bice-xi-16.vercel.app](https://portfolio-bice-xi-16.vercel.app/?utm_source=chatgpt.com)
+
+---
+
+⭐ If you like this portfolio, feel free to explore the projects and connect with me!
